@@ -1,22 +1,16 @@
-public interface Estudiante {
-    String nombre ();
-    int codigo ();
-    String direccion ();
 
-    String identifiable ();
-    String escribir ();
+public class Estudiante {
+    String nombre;
+    int codigo;
+    String direccion;
 
-    public class Estudiante {
+    public Estudiante(String nombre, int codigo,String direccion) {
+        this.nombre = nombre;
 
+        this.codigo = codigo;
 
-        // Constructor con parámetro
-        public Estudiante(String nombre) {
-            this.nombre = nombre;
-        }
+        this.direccion = direccion;
     }
 
 
 }
-
-
-
